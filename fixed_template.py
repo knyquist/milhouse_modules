@@ -1,8 +1,6 @@
-import warnings
 import sys
 
-from pbcore.io import (BasH5Reader, 
-					   CmpH5Reader)
+from pbcore.io import (BasH5Reader, CmpH5Reader)
 
 # FIXME. PATH to PlsH5Reader should be added
 sys.path.append('/pbi/dept/enzymology/Kristofor/python/mhpbb-dev')
@@ -14,8 +12,8 @@ import h5py as h5
 
 # font to be used for titles, axes labels, and tick-label sizes
 font = {'family': 'normal',
-		'weight': 'normal',
-		'size': 22}
+	'weight': 'normal',
+	'size': 22}
 
 def plotAlignmentDensityByTemplatePosition(cmph5, mh_name):
 	tEnds = cmph5.tEnd
