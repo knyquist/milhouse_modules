@@ -157,7 +157,7 @@ def plot_tStart_vs_alnTimeStart(cmph5, bash5, plsh5, mh_name):
 	ax.set_title(mh_name, fontdict=font)
 	return fig, ax
 	
-def plot_tSpan_vs_tStart_or_tEnd(cmph5, mh_name): # cmph5s is a list of CmpH5Readers, names is list of milhouse Name fields
+def plot_tSpan_vs_tStart_or_tEnd(cmph5, mh_name):
 	tEnds = cmph5.tEnd
 	tStarts = cmph5.tStart
 	tSpans = tEnds - tStarts
